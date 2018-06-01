@@ -1,0 +1,2 @@
+# SmartChair
+IoT project
