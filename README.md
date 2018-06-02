@@ -1,12 +1,12 @@
 # SmartChair
 A quick IoT project: Chair + Presence detection = SmartChair
 
-![smartchair](img/smartchair.jpg | width = 400)
+![smartchair](img/smartchair.jpg)
 
 ## Getting started
 ### Hardware
 * [M5Stack](http://m5stack.com/) - The brain (Based on the [ESP32](https://en.wikipedia.org/wiki/ESP32))
-* [HC-SR04](img/HC-SR04-Ultrasonic-Sensor.jpg) - Ultrasonic rangefinder for presence detection (A pressure sensor might be less noticeable :sweat_smile:)
+* [HC-SR04](img/HC-SR04-Ultrasonic-Sensor.jpg) - Ultrasonic rangefinder for presence detection (A pressure sensor might be less noticeable :smiley:)
 
 ### Software
 * [ESPlorer](https://esp8266.ru/esplorer/) - IDE (Development done in MicroPython)
@@ -15,7 +15,7 @@ A quick IoT project: Chair + Presence detection = SmartChair
 ## Installing
 The source files are located in the 'src' folder. [boot.py](src/boot.py) is executed first. This will set up the WiFi connection. [main.py](src/main.py) will run afterwards. You will have to create an extra file [myconfig.py](src/myconfig.py) with some configuration. Example:
 
-'''python
+```python
 wifi_ssid = 'MyWiFi'
 wifi_psk = 'wifi123'
 
@@ -28,7 +28,7 @@ thingspeak_mqtt_user = 'thingspeak'
 thingspeak_mqtt_pwd = 'thingspeak123'
 thingspeak_channel_id = 'channel1'
 thingspeak_channel_api_key = '123456'
-'''
+```
 
 Program the files using ESPlorer. Features can be enabled or disabled in [main.py](src/main.py).
 
@@ -45,7 +45,7 @@ The state of the chair (occupied or not) is sent periodically to [thingspeak](ht
 The state of the chair is published via MQTT after it changes. [Hass.io](https://www.home-assistant.io/hassio/) (A home automation system) can be used to process this information. Some idea's:
 
 #### Light
-When the user is sitting down and it's dark enough outside, turn on the light next to him on.
+When the user is sitting down and it's dark enough outside, turn on the light next to him.
 
 [![lights](img/Youtube.png)](https://www.youtube.com/watch?v=g3N8vFhwZuM)
 
