@@ -9,7 +9,7 @@ A quick IoT project: Chair + Presence detection = SmartChair
 * [HC-SR04](img/HC-SR04-Ultrasonic-Sensor.jpg) - Ultrasonic rangefinder for presence detection (A pressure sensor might be less noticeable :smiley:)
 
 ### Software
-* [ESPlorer](https://esp8266.ru/esplorer/) - IDE (Development done in MicroPython)
+* [ESPlorer](https://github.com/Josverl/ESPlorer) - IDE (Development done in MicroPython)
 * [LoBo MicroPython](https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo) - Firmware for the ESP32
 
 ## Installing
